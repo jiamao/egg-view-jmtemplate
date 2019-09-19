@@ -1,5 +1,5 @@
 {
-  "name": "egg-view-jmteplate",
+  "name": "egg-view-jmtemplate",
   "version": "1.0.2",
   "description": "基于jm-template的eggjs模板插件",
   "main": "index.js",
