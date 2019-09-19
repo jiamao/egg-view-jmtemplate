@@ -1,0 +1,41 @@
+{
+  "name": "egg-view-jmteplate",
+  "version": "1.0.1",
+  "description": "基于jm-template的eggjs模板插件",
+  "main": "index.js",
+  "eggPlugin": {
+    "name": "jmtemplate",
+    "dependencies": [
+      "view"
+    ]
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiamao/egg-view-jmtemplate.git"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "egg-view",
+    "jm-template"
+  ],
+  "author": "jiamao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jiamao/egg-view-jmtemplate.git/issues"
+  },
+  "files": [
+    "config",
+    "app",
+    "lib",
+    "app.js"
+  ],
+  "homepage": "https://github.com/jiamao/egg-view-jmtemplate.git#readme",
+  "dependencies": {
+    "jm-template": "^1.0.7"
+  }
+}
