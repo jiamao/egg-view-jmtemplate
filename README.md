@@ -12,9 +12,10 @@ $ npm i egg-view-jmtemplate --save
 
 ```js
 // {app_root}/config/plugin.js
-exports.htmling = {
+exports.jmtemplate = {
   enable: true,
   package: 'egg-view-jmtemplate',
+  // root: path.join(appInfo.baseDir, 'app/view')
 };
 
 // {app_root}/config/config.default.js
