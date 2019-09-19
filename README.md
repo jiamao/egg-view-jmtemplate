@@ -33,7 +33,7 @@ Create a jmtemplate file
 ```html
 <!-- banner.html -->
 <% for ( var i = 0; i < users.length; i++ ) { %>
-    <li><a href="<%=users[i].url%>"><%=users[i].name%></a></li>
+    <li><a href="<%=users[i].url%>"><%=users[i].name | add(6) %></a></li>
 <% } %>
 ```
 
@@ -52,7 +52,7 @@ exports.jmtemplate = async ctx => {
   }, {
     // 可以传临时filter
     filters: {
-      add: (name) => return name.substr(0, 4)
+      add: (name, len) => return name.substr(0, len || 4)
     }
   });
 };
@@ -62,7 +62,7 @@ exports.jmtemplate = async ctx => {
 `filter`可以写在扩展中， 或者在`render`时传递。
 ```js
 // {app_root}/app/extend/filter.js
-exports.add = name => return name.substr(0, 4);
+exports.add = (name, len) => return name.substr(0, len || 4);
 ```
 
 ## License
