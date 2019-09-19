@@ -1,6 +1,6 @@
 {
   "name": "egg-view-jmtemplate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "基于jm-template的eggjs模板插件",
   "main": "index.js",
   "eggPlugin": {
@@ -36,6 +36,6 @@
   ],
   "homepage": "https://github.com/jiamao/egg-view-jmtemplate.git#readme",
   "dependencies": {
-    "jm-template": "^1.0.7"
+    "jm-template": "^1.0.8"
   }
 }
