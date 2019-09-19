@@ -49,10 +49,21 @@ exports.jmtemplate = async ctx => {
           {url:'http://qqq2.com', name: "jiamao2"}
       ]
     },
+  }, {
+    // 可以传临时filter
+    filters: {
+      add: (name) => return name.substr(0, 4)
+    }
   });
 };
 ```
 
+#### Filters
+`filter`可以写在扩展中， 或者在`render`时传递。
+```js
+// {app_root}/app/extend/filter.js
+exports.add = name => return name.substr(0, 4);
+```
 
 ## License
 
