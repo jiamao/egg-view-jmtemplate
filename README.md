@@ -25,7 +25,7 @@ exports.view = {
   },
 };
 
-// htmling config
+// jmtemplate config
 exports.jmtemplate = {
   ssi: false // true 可以开始ssi支持
 };
