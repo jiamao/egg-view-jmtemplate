@@ -26,7 +26,9 @@ exports.view = {
 };
 
 // htmling config
-exports.jmtemplate = {};
+exports.jmtemplate = {
+  ssi: false // true 可以开始ssi支持
+};
 ```
 
 Create a jmtemplate file
