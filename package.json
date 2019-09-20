@@ -36,7 +36,7 @@
   ],
   "homepage": "https://github.com/jiamao/egg-view-jmtemplate.git#readme",
   "dependencies": {
-    "jm-template": "^1.1.9",
+    "jm-template": "^1.1.10",
     "node-ssi": "^0.3.2"
   }
 }
