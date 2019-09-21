@@ -10,7 +10,7 @@
     ]
   },
   "scripts": {
-    "test": "npm run lint -- --fix && npm run test-local"
+    "test": "node ./test/index.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
   "homepage": "https://github.com/jiamao/egg-view-jmtemplate.git#readme",
   "dependencies": {
     "jm-template": "^1.1.10",
-    "node-ssi": "^0.3.2"
+    "node-ssi": "^0.3.2",
+    "ssi": "^0.3.0"
   }
 }
