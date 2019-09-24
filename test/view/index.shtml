@@ -5,3 +5,13 @@
 <!--#endif-->
 
 <!--#config timefmt="%Y%m%d%H%M%S" --><!--#echo var="DATE_LOCAL"-->
+
+<script id="tpl_life_banner" type="text/html">
+    <div class="item js-tap-on <%= divClass %>" data-stat="<%= stat %>" data-local-link="<%= sLinkUrl %>" recom-id="<%= recomId%>">
+        <img src="<%= sImageUrl %>" alt="<%= sThemeTitle %>">
+        <h6 class="tt f-bold <%= isRedDiv %>"><span class='js-life-recome-title'><%= sThemeTitle %></span> <i class="<%= giftIconClass %> js-gift-icon item-icon <%= giftClass %>"></i></h6>
+        <p class="js-tip txt tf">
+            <%= sThemeDis %>
+        </p>
+    </div>
+</script>

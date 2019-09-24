@@ -3,7 +3,7 @@ const template = require('../lib/template.js');
 
 const renderer = new template({
     root: path.join(__dirname, 'view'),
-    ssi: true
+    ssi: false
 }, {
     "HTTP_HOST": 'www.tenganxinxi.com',
     'DATE_LOCAL': '20190924154040'
