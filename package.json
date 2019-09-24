@@ -1,6 +1,6 @@
 {
   "name": "egg-view-jmtemplate",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "基于jm-template的eggjs模板插件",
   "main": "index.js",
   "eggPlugin": {

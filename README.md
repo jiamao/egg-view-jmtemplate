@@ -68,6 +68,19 @@ exports.jmtemplate = async ctx => {
 exports.add = (name, len) => return name.substr(0, len || 4);
 ```
 
+#### SSI
+如果配置开启了`ssi`,这里模拟的是nginx环境，支持以下变量：
+```js
+env['HTTP_USER_AGENT'] = this.ctx.request.headers['user-agent'] || '';
+env['REMOTE_ADDR'] = this.ctx.ip;
+env['REMOTE_PORT'] = this.ctx.port;
+env['HTTP_HOST'] = this.ctx.request.hostname;
+env['HTTP_COOKIE'] = this.ctx.req.headers['cookie'] || '';
+env['QUERY_STRING_UNESCAPED'] = this.ctx.req.href;
+env['QUERY_STRING'] = this.ctx.req.querystring;
+env['DOCUMENT_ROOT'] = this.config.root || '';
+env['SERVER_SOFTWARE'] = 'Nginx';
+```
 ## License
 
 [MIT](LICENSE)
