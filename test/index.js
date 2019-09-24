@@ -5,7 +5,8 @@ const renderer = new template({
     root: path.join(__dirname, 'view'),
     ssi: true
 }, {
-    "HTTP_HOST": 'www.tenganxinxi.com'
+    "HTTP_HOST": 'www.tenganxinxi.com',
+    'DATE_LOCAL': '20190924154040'
 });
 
 renderer.render('./index.shtml', {

@@ -3,3 +3,5 @@
 <!--#else-->
 <title>腾讯理财通</title>
 <!--#endif-->
+
+<!--#config timefmt="%Y%m%d%H%M%S" --><!--#echo var="DATE_LOCAL"-->
